@@ -41,22 +41,24 @@ export default Vue.extend({
 
 ```vue
 <script>
-import { VCountrySelect } from 'vuetify-country-search'
+import { VCountrySelect, VRegionSelect, AllCountry, } from 'vuetify-country-search'
 
 export default {
   name: 'App',
-  components: { VCountrySelect },
-  data: () => ({
+  components: { VCountrySelect, VRegionSelect },
+  data: () => ({ 
     country: 'AU',
+    AllCountry, // AllCountry are array of all country and state
   })
 };
 </script>
 
 <template>
-    <v-country-select v-model="country" />
+    <VCountrySelect v-model="country" />
+    <br>
+    <VRegionSelect v-model="state" :country="country">
 </template>
 ```
-
 
 
 ## Options
