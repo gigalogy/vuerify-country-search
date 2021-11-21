@@ -26,8 +26,8 @@ new Vue({}).$mount('#app')
 // then inside your vue components
 export default Vue.extend({
   data: () => ({
-    country: 'AU',
-    region: 'South Australia'
+    country: '',
+    region: ''
   })
 })
 
@@ -47,7 +47,8 @@ export default {
   name: 'App',
   components: { VCountrySelect, VRegionSelect },
   data: () => ({ 
-    country: 'AU',
+    country: '',
+    state: '',
     AllCountry, // AllCountry are array of all country and state
   })
 };
