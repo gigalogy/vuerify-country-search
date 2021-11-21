@@ -1,15 +1,49 @@
 {
   "name": "vuetify-country-search",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "./dist/vuetifyCountrySearch.umd.min.js",
+  "files": [
+    "dist/vuetifyCountrySearch.umd.min.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name vuetifyCountrySearch ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigalogy/vuerify-country-search.git"
+  },
+  "keywords": [
+    "vue",
+    "vuetify",
+    "input",
+    "select",
+    "country",
+    "region",
+    "state",
+    "country",
+    "search",
+    "region",
+    "search",
+    "state",
+    "search",
+    "vue",
+    "component",
+    "javascript"
+  ],
+  "author": "Gigalogy <info@gigalogy.com>",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/gigalogy/vuerify-country-search/issues"
+  },
+  "homepage": "https://github.com/gigalogy/vuerify-country-search#readme",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vuetify": "^2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -18,6 +52,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
