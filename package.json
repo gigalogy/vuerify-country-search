@@ -8,8 +8,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name vuetifyCountrySearch ./src/index.js",
+    "build": "vue-cli-service build --target lib --name vuetifyCountrySearch ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "repository": {
