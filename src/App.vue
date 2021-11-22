@@ -19,26 +19,19 @@
 </template>
 
 <script>
-// import VCountrySelect from '@/components/VCountrySelect'
-// import VRegionSelect from '@/components/VRegionSelect'
+
 
 export default {
   name: 'App',
-  // components: {
-  //   VCountrySelect,
-  //   VRegionSelect
-  // },
+  components: {
+    
+  },
   data: () => ({
-    country: 'BD',
+    country: '',
     region: ''
   }),
   watch: {
-    country() {
-      console.log(this.country)
-    },
-    region() {
-      console.log(this.region)
-    }
+    
   }
 };
 </script>

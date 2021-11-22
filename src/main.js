@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import VCountryRegionSelect from './index'
+import VueCountrySearch from './index'
 
 Vue.use(Vuetify)
-Vue.use(VCountryRegionSelect)
+Vue.use(VueCountrySearch)
 
 Vue.config.productionTip = false
 
